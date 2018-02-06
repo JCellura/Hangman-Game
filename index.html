@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hangman</title>
+
+  <!-- Bootstrap File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- JQuery -->
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</head>
+<body onload="startUp()">
+
+  <!-- Overall Bootstrap Grid -->
+    <div class="container">
+
+        <!-- Title for Page -->
+        <div class="row">
+
+            <div class = "text-center">
+                <h1>Hangman</h1>
+            </div>
+            <div class = "text-center">
+                <h2>Football</h2>
+            </div>
+
+        </div>
+
+       <!-- Row for game to be placed into -->
+        <div class = "row">
+
+           
+            <div class = "col-md-6 game-section">
+                <div class = "col-md-6" id="picture">
+                    <div>
+                        <img id="football" src="https://dawnofthedawg.com/wp-content/uploads/getty-images/2017/07/619716584-washington-v-utah.jpg.jpg" alt="Football">
+                    </div>
+                </div>
+                <div class = "col-md-6" id="instructions">
+                    <h2>Guess a Word!</h2>
+                    <div class="right" id="press-any-key">
+                        Press Any Key To Get Started
+                    </div>
+                    <div class="right" id="wins">
+                        Number of Wins: 0
+                    </div>
+                    <div class = "right" id="word">
+                        Current Word:
+                        </div>
+                    <div class="right" id="answer">
+
+                    </div>
+                    <div class = "right" id="counter">
+                        Number of Guesses Remaining:
+                    </div>
+                    <div class = "right" id="guess">
+                       Letters Already Guessed:
+                    </div>
+                    <div class = "right" id="message">
+                        
+                    </div>
+                    <div class = "right" id="stat">
+                            
+                    </div>
+                    <div>
+                        <input type="button" value="Start-Over" onClick="refresh()"/>
+                        <input type="button" value="Give-Up" onClick="quit()"/>
+                    </div>
+
+                </div>
+
+            </div>
+
+        
+        </div>
+
+    </div>
+
+
+        
+            <p id="answer"></p>
+            <p id="guess"></p>
+            <p id="counter"></p>
+            <p id="stat"></p>
+            <p id="message"></p>
+
+                    <!-- <h1>Hangman!</h1>
+                    Type a letter (then press guess)
+                    <input id="guess" type="text">
+                    <! <input type="text" value="guess" onClick="guessOne()"/> -->
+                    <!-- <input type="button" value="quit" onClick="quit()"/>
+                    <p id="message">&nbsp;</p>
+                    <p>
+                    <font size="+3"><span id="answer">puzzle loading..</span></font>
+                    </p> -->
+</body>
+
+</html>
+
