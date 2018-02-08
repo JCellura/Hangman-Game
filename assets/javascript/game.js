@@ -139,7 +139,7 @@ function quit() {
     // set isQuit to true so that the guessOne function can no longer run after the user quits!
     isQuit = true;
    // tell the user what the word was
-    document.getElementById("empty").innerHTML = "The Word Was " + word + " Click The Start-Over Button To Begin a New Game!";
+    document.getElementById("empty").innerHTML = "The Word Was " + word + "! Click The Start-Over Button To Begin a New Game!";
     for (var j = 0; j < word.length; j++) {
         answerArray[j] = word[j];
     }

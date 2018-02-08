@@ -12,7 +12,7 @@ h1 {
 
 .game-section {
     background-color: blue;
-    margin-left: 17.5%;
+    margin-left: 17%;
     border: solid white 2px;
 }
 
@@ -46,10 +46,10 @@ h1 {
 }
 
 #rules1 {
-    min-height: 30px;
+    min-height: 50px;
     font-size:large;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 #rules2 {
@@ -57,5 +57,5 @@ h1 {
 }
 
 #empty {
-    height: 60px;
+    height: 75px;
 }
