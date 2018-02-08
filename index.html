@@ -6,9 +6,9 @@
 
   <!-- Bootstrap File -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
+ <!-- My CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
-  <!-- JQuery -->
+  <!-- Javascript -->
   <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </head>
@@ -23,7 +23,7 @@
             <div class = "text-center">
                 <h1>Hangman</h1>
             </div>
-            <div class = "text-center">
+            <div class = "text-center" style="color:white">
                 <h2>Football</h2>
             </div>
 
@@ -34,15 +34,21 @@
 
            
             <div class = "col-md-6 game-section">
-                <div class = "col-md-6" id="picture">
-                    <div>
+                <div class = "col-md-6" id="picture-side">
+                    <div class = "left">
                         <img id="football" src="https://dawnofthedawg.com/wp-content/uploads/getty-images/2017/07/619716584-washington-v-utah.jpg.jpg" alt="Football">
+                    </div>
+                    <div class = "left" id="rules1">
+                        The rules for the game:
+                    </div>
+                    <div class = "left" id="rules2">
+                        Guess a word that is related to football. This word may be an NFL team or a position of a player on the field. You have 8 incorrect quesses before you loose and must restart the game. Everytime you answer a word correct, you will earn a win and the word will reset along with the number of incorrect guesses you have remaining. If you are stumped on a word, you can hit the "give-up" button and have the word revealed to you. Also, at any time you can hit the "start-over" button to reset all stats and start the game over with! Have fun!
                     </div>
                 </div>
                 <div class = "col-md-6" id="instructions">
                     <h2>Guess a Word!</h2>
                     <div class="right" id="press-any-key">
-                        Press Any Key To Get Started
+                        Guess a Letter to Begin!
                     </div>
                     <div class="right" id="wins">
                         Number of Wins: 0
@@ -54,7 +60,7 @@
 
                     </div>
                     <div class = "right" id="counter">
-                        Number of Guesses Remaining: 15
+                        Number of Guesses Remaining: 8
                     </div>
                     <div class = "right" id="guess">
                        Letters Already Guessed:
@@ -64,6 +70,9 @@
                     </div>
                     <div class = "right" id="stat">
                             
+                    </div>
+                    <div cass = "right" id="empty">
+
                     </div>
                     <div>
                         <input type="button" value="Start-Over" onClick="refresh()"/>
@@ -79,23 +88,6 @@
 
     </div>
 
-
-        
-            <p id="answer"></p>
-            <p id="guess"></p>
-            <p id="counter"></p>
-            <p id="stat"></p>
-            <p id="message"></p>
-
-                    <!-- <h1>Hangman!</h1>
-                    Type a letter (then press guess)
-                    <input id="guess" type="text">
-                    <! <input type="text" value="guess" onClick="guessOne()"/> -->
-                    <!-- <input type="button" value="quit" onClick="quit()"/>
-                    <p id="message">&nbsp;</p>
-                    <p>
-                    <font size="+3"><span id="answer">puzzle loading..</span></font>
-                    </p> -->
 </body>
 
 </html>
