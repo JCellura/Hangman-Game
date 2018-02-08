@@ -120,6 +120,7 @@ document.onkeyup = function() {
 
 // Creates a refresh function for when the "start-over" button is clicked, everything can be reset
 function refresh() {
+    isQuit = false;
     startUp();
     count=0;
     wins=0;
